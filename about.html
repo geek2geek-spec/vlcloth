@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About · Bentley Rae Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Bentley Rae Boutique Home">
+          <span class="brand-mark" aria-hidden="true">BR</span>
+          <span class="brand-wordmark">
+            <span class="line1">BENTLEY RAE</span>
+            <span class="line2">BOUTIQUE</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="index.html#new" class="nav-link">New Arrivals</a>
+          <a href="index.html#collections" class="nav-link">Collections</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="cart.html" class="nav-link">Cart</a>
+        </nav>
+        <div class="actions">
+          <a class="icon-btn" href="cart.html" aria-label="Cart">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <circle cx="9" cy="20" r="1.5"></circle>
+              <circle cx="18" cy="20" r="1.5"></circle>
+            </svg>
+            <span class="cart-count" aria-live="polite"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container" style="padding:42px 0 10px">
+        <h1 class="detail-title">Our Story</h1>
+        <p class="detail-desc">Bentley Rae Boutique curates modern essentials through a luxurious, feminine lens. We blend refined tailoring with soft textures and warm neutrals, creating an elevated wardrobe that feels timeless and fashion-forward.</p>
+      </section>
+      <section class="container mood-board" style="padding-bottom:34px">
+        <div class="swatches">
+          <div class="swatch" style="--sw: var(--cream)"><span>Cream</span></div>
+          <div class="swatch" style="--sw: var(--beige)"><span>Beige</span></div>
+          <div class="swatch" style="--sw: var(--champagne)"><span>Champagne</span></div>
+          <div class="swatch" style="--sw: var(--gold)"><span>Soft Gold</span></div>
+          <div class="swatch" style="--sw: var(--charcoal)"><span>Charcoal</span></div>
+        </div>
+        <div class="type-samples">
+          <div class="type serif">Aa Cormorant Garamond</div>
+          <div class="type sans">Aa Inter</div>
+        </div>
+        <div class="textures">
+          <img src="assets/texture-silk.svg" alt="Silk fabric texture" data-ph="assets/texture-silk.svg" />
+          <img src="assets/texture-marble.svg" alt="Marble surface" data-ph="assets/texture-marble.svg" />
+          <img src="assets/texture-linen.svg" alt="Linen weave" data-ph="assets/texture-linen.svg" />
+        </div>
+      </section>
+      <section id="contact" class="container" style="padding-bottom:48px">
+        <h2 class="section-head"><span>Contact</span></h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+          <div>
+            <div class="type">hello@bentleyrae.com</div>
+            <div class="type" style="margin-top:10px">Mon–Fri, 9–6 EST</div>
+          </div>
+          <form class="newsletter" aria-label="Send a message">
+            <label for="msg" class="label">Message</label>
+            <div class="controls">
+              <input id="msg" type="text" placeholder="How can we help?" required />
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">© Bentley Rae Boutique</div>
+        <form class="newsletter" aria-label="Subscribe to newsletter">
+          <label for="email" class="label">Stay in the know</label>
+          <div class="controls">
+            <input id="email" type="email" placeholder="Email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>
+

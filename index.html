@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BENTLEY RAE BOUTIQUE · Luxurious, Feminine, Timeless</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Bentley Rae Boutique Home">
+          <span class="brand-mark" aria-hidden="true">BR</span>
+          <span class="brand-wordmark">
+            <span class="line1">BENTLEY RAE</span>
+            <span class="line2">BOUTIQUE</span>
+          </span>
+        </a>
+        <nav class="nav">
+          <a href="index.html#new" class="nav-link">New Arrivals</a>
+          <a href="index.html#collections" class="nav-link">Collections</a>
+          <a href="index.html#mood" class="nav-link">Mood</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="cart.html" class="nav-link">Cart</a>
+        </nav>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <a class="icon-btn" href="cart.html" aria-label="Cart">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M6 6h15l-1.5 9h-12z"></path>
+              <circle cx="9" cy="20" r="1.5"></circle>
+              <circle cx="18" cy="20" r="1.5"></circle>
+            </svg>
+            <span class="cart-count" aria-live="polite"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <picture>
+          <source srcset="https://picsum.photos/seed/bentley-hero/1920/900" media="(min-width: 1024px)">
+          <img src="https://picsum.photos/seed/bentley-hero/1200/700" alt="Editorial fashion model in soft light" class="hero-img" data-ph="assets/hero.svg" />
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <h1 class="hero-title">Luxurious. Feminine. Timeless.</h1>
+          <p class="hero-sub">Modern boutique essentials with a high-fashion, editorial sensibility.</p>
+          <div class="hero-cta">
+            <a href="#collections" class="btn btn-primary">Shop Collection</a>
+            <a href="#editorial" class="btn btn-ghost">Explore Editorial</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="curation" id="collections">
+        <div class="container section-head">
+          <h2>Curated Looks</h2>
+          <p>Outfits, accessories, and lifestyle captured with minimalist elegance.</p>
+        </div>
+        <div class="container grid curated-grid">
+          <figure class="tile tall">
+            <img src="https://picsum.photos/seed/knit-silk/1200/520" alt="Soft knit and silk skirt" data-ph="assets/knit.svg" />
+            <figcaption>Soft Knit & Silk</figcaption>
+          </figure>
+          <figure class="tile">
+            <img src="https://picsum.photos/seed/gold-accents/1200/380" alt="Gold accessories on marble" data-ph="assets/gold.svg" />
+            <figcaption>Gold Accents</figcaption>
+          </figure>
+          <figure class="tile">
+            <img src="https://picsum.photos/seed/tailored-blazer/1200/380" alt="Tailored blazer" data-ph="assets/blazer.svg" />
+            <figcaption>Tailored Blazer</figcaption>
+          </figure>
+          <figure class="tile wide">
+            <img src="https://picsum.photos/seed/editorial/1600/380" alt="Editorial portrait" data-ph="assets/editorial.svg" />
+            <figcaption>Editorial Portrait</figcaption>
+          </figure>
+          <figure class="tile">
+            <img src="https://picsum.photos/seed/minimal-handbag/1200/380" alt="Minimal handbag" data-ph="assets/handbag.svg" />
+            <figcaption>Minimal Handbag</figcaption>
+          </figure>
+          <figure class="tile">
+            <img src="https://picsum.photos/seed/silk-movement/1200/380" alt="Silk dress movement" data-ph="assets/silk.svg" />
+            <figcaption>Silk Movement</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="mood" id="mood">
+        <div class="container section-head">
+          <h2>Brand Mood Board</h2>
+          <p>Textures, palette, and typography inspiring Bentley Rae Boutique.</p>
+        </div>
+        <div class="container mood-board">
+          <div class="swatches">
+            <div class="swatch" style="--sw: var(--cream)"><span>Cream</span></div>
+            <div class="swatch" style="--sw: var(--beige)"><span>Beige</span></div>
+            <div class="swatch" style="--sw: var(--champagne)"><span>Champagne</span></div>
+            <div class="swatch" style="--sw: var(--gold)"><span>Soft Gold</span></div>
+            <div class="swatch" style="--sw: var(--charcoal)"><span>Charcoal</span></div>
+          </div>
+          <div class="type-samples">
+            <div class="type serif">Aa Cormorant Garamond</div>
+            <div class="type sans">Aa Inter</div>
+          </div>
+          <div class="textures">
+            <img src="assets/texture-silk.svg" alt="Silk fabric texture" data-ph="assets/texture-silk.svg" />
+            <img src="assets/texture-marble.svg" alt="Marble surface" data-ph="assets/texture-marble.svg" />
+            <img src="assets/texture-linen.svg" alt="Linen weave" data-ph="assets/texture-linen.svg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="new">
+        <div class="container section-head">
+          <h2>New Arrivals</h2>
+          <p>Minimalist product cards with elegant hover and variant swatches.</p>
+        </div>
+        <div class="container grid product-grid">
+          <!-- Product 1 -->
+          <article class="product-card" data-product data-id="slip-dress">
+            <div class="media">
+              <img src="https://picsum.photos/seed/slip-dress-card/600/280" alt="Champagne silk slip dress" data-ph="assets/product-slip.svg" />
+              <a class="view" href="product.html?id=slip-dress">View details</a>
+            </div>
+            <div class="info">
+              <h3 class="name">Silk Slip Dress</h3>
+              <div class="price">$248</div>
+              <div class="variants" role="group" aria-label="Choose color">
+                <button class="swatch-dot selected" style="--dot:#f3e8d2" aria-label="Champagne" data-variant="Champagne"></button>
+                <button class="swatch-dot" style="--dot:#d9d2c0" aria-label="Sand" data-variant="Sand"></button>
+                <button class="swatch-dot" style="--dot:#2a2a2a" aria-label="Charcoal" data-variant="Charcoal"></button>
+              </div>
+              <div class="chosen" aria-live="polite">Color: Champagne</div>
+              <div class="card-actions">
+                <button class="btn btn-primary btn-add">Add to Cart</button>
+              </div>
+            </div>
+            
+          </article>
+          <!-- Product 2 -->
+          <article class="product-card" data-product data-id="mini-bag">
+            <div class="media">
+              <img src="https://picsum.photos/seed/mini-bag-card/600/280" alt="Structured leather mini bag" data-ph="assets/product-bag.svg" />
+              <a class="view" href="product.html?id=mini-bag">View details</a>
+            </div>
+            <div class="info">
+              <h3 class="name">Mini Leather Bag</h3>
+              <div class="price">$198</div>
+              <div class="variants" role="group" aria-label="Choose color">
+                <button class="swatch-dot selected" style="--dot:#1f1f1f" aria-label="Black" data-variant="Black"></button>
+                <button class="swatch-dot" style="--dot:#c9a34a" aria-label="Soft Gold" data-variant="Soft Gold"></button>
+              </div>
+              <div class="chosen" aria-live="polite">Color: Black</div>
+              <div class="card-actions">
+                <button class="btn btn-primary btn-add">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <!-- Product 3 -->
+          <article class="product-card" data-product data-id="gold-cuff">
+            <div class="media">
+              <img src="https://picsum.photos/seed/gold-cuff-card/600/280" alt="Gold cuff bracelet" data-ph="assets/product-cuff.svg" />
+              <a class="view" href="product.html?id=gold-cuff">View details</a>
+            </div>
+            <div class="info">
+              <h3 class="name">Gold Cuff</h3>
+              <div class="price">$128</div>
+              <div class="variants" role="group" aria-label="Choose finish">
+                <button class="swatch-dot selected" style="--dot:#c9a34a" aria-label="Soft Gold" data-variant="Soft Gold"></button>
+                <button class="swatch-dot" style="--dot:#b08c3a" aria-label="Antique Gold" data-variant="Antique Gold"></button>
+              </div>
+              <div class="chosen" aria-live="polite">Finish: Soft Gold</div>
+              <div class="card-actions">
+                <button class="btn btn-primary btn-add">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+          <!-- Product 4 -->
+          <article class="product-card" data-product data-id="charcoal-blazer">
+            <div class="media">
+              <img src="https://picsum.photos/seed/charcoal-blazer-card/600/280" alt="Tailored charcoal blazer" data-ph="assets/product-blazer.svg" />
+              <a class="view" href="product.html?id=charcoal-blazer">View details</a>
+            </div>
+            <div class="info">
+              <h3 class="name">Charcoal Blazer</h3>
+              <div class="price">$298</div>
+              <div class="variants" role="group" aria-label="Choose size">
+                <button class="swatch-pill selected" aria-label="XS" data-variant="XS">XS</button>
+                <button class="swatch-pill" aria-label="S" data-variant="S">S</button>
+                <button class="swatch-pill" aria-label="M" data-variant="M">M</button>
+                <button class="swatch-pill" aria-label="L" data-variant="L">L</button>
+              </div>
+              <div class="chosen" aria-live="polite">Size: XS</div>
+              <div class="card-actions">
+                <button class="btn btn-primary btn-add">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">© Bentley Rae Boutique</div>
+        <form class="newsletter" aria-label="Subscribe to newsletter">
+          <label for="email" class="label">Stay in the know</label>
+          <div class="controls">
+            <input id="email" type="email" placeholder="Email address" required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>
+
